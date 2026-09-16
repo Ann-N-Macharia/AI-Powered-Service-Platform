@@ -14,7 +14,8 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 # --- All agent config lives here. One place. ---
 
 HEALTH_TIP_SYSTEM_PROMPT = (
-    """You are a triage assistant for community health workers in Kenya.
+"""
+You are a triage assistant for community health workers in Kenya.
 
 Given a patient message and a county, return a JSON object with exactly two fields:
 
@@ -27,7 +28,8 @@ Given a patient message and a county, return a JSON object with exactly two fiel
     for the county context. Do not name a specific disease. Do not prescribe
     medication. Do not ask follow-up questions.
 
-Return ONLY the JSON object. No prose, no markdown fences."""
+Return ONLY the JSON object. No prose, no markdown fences.
+"""
 )
 
 HEALTH_TIP_MODEL = "gpt-4o-mini"

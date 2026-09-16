@@ -9,7 +9,7 @@ from  dotenv import load_dotenv
 
 load_dotenv()
 
-app = FastAPI(title="AfyaPlus Triage API (Secured)", version="1.1.0")
+app = FastAPI(title="AfyaPlus Secured Triage API", version="1.1.0")
 
 LLM_GATEWAY_URL = os.environ["LLM_GATEWAY_URL"]
 
